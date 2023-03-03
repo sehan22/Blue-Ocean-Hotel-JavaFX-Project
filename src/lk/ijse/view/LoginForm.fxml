@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="519.0" prefWidth="797.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.LoginFormController">
+   <children>
+      <ImageView fx:id="loginFormContext" fitHeight="519.0" fitWidth="845.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/Frame%201.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="449.0" layoutY="236.0" prefHeight="17.0" prefWidth="115.0" text="User Name :">
+         <font>
+            <Font name="DejaVuMathTeXGyre-Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="464.0" layoutY="281.0" prefHeight="17.0" prefWidth="108.0" text="Password :">
+         <font>
+            <Font name="DejaVuMathTeXGyre-Regular" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtuserName" focusColor="#984f1a" focusTraversable="false" labelFloat="true" layoutX="549.0" layoutY="220.0" onAction="#userNameEnterOnAction" prefHeight="31.0" prefWidth="185.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="606.0" layoutY="372.0" onAction="#btnLoginOnAction" prefHeight="31.0" prefWidth="108.0" style="-fx-background-color: #984F1A;" text="LOGIN" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Hyperlink layoutX="612.0" layoutY="313.0" prefHeight="23.0" prefWidth="136.0" text="Forgot Your Password?" />
+      <JFXButton fx:id="btnClose" buttonType="RAISED" layoutX="484.0" layoutY="372.0" onAction="#cancelOnAction" opacity="0.61" prefHeight="31.0" prefWidth="108.0" style="-fx-background-color: #ffffff; -fx-background-color:#ffffff ;" text="CLOSE" textFill="#984f1a">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXPasswordField fx:id="txtPassword" focusColor="#984f1a" focusTraversable="false" layoutX="549.0" layoutY="265.0" onAction="#passwordEnterOnAction" prefHeight="31.0" prefWidth="185.0" />
+      <JFXButton layoutX="487.0" layoutY="442.0" onAction="#createAcountOnAction" prefHeight="25.0" prefWidth="238.0" scaleShape="false" style="-fx-background-color: white; -fx-background-radius: 10;" text="CREATE A NEW ACCOUNT" textFill="#c29576" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <Separator layoutX="506.0" layoutY="429.0" prefWidth="200.0" />
+      <AnchorPane fx:id="pnCreateAccContext" layoutX="410.0" layoutY="142.0" prefHeight="373.0" prefWidth="381.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <JFXTextField fx:id="txtRegPassword" focusColor="#984f1a" focusTraversable="false" labelFloat="true" layoutX="140.0" layoutY="125.0" onAction="#passwordEnterOnAction" prefHeight="31.0" prefWidth="185.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="txtRegUserName" focusColor="#984f1a" focusTraversable="false" layoutX="140.0" layoutY="73.0" onAction="#userNmaeEnterOnAction" prefHeight="31.0" prefWidth="185.0" />
+            <Label layoutX="39.0" layoutY="87.0" prefHeight="23.0" prefWidth="115.0" text="User Name :">
+               <font>
+                  <Font name="DejaVuMathTeXGyre-Regular" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="53.0" layoutY="140.0" prefHeight="17.0" prefWidth="108.0" text="Password :">
+               <font>
+                  <Font name="DejaVuMathTeXGyre-Regular" size="15.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="175.0" layoutY="197.0" onAction="#createAccountOnAction" prefHeight="31.0" prefWidth="152.0" style="-fx-background-color: #984F1A;" text="CREATE ACCOUNT" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnClose1" buttonType="RAISED" layoutX="55.0" layoutY="197.0" onAction="#cancelOnAction" opacity="0.61" prefHeight="31.0" prefWidth="108.0" style="-fx-background-color: #ffffff; -fx-background-color:#ffffff ;" text="CLOSE" textFill="#984f1a">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <Separator layoutX="91.0" layoutY="277.0" prefWidth="200.0" />
+            <JFXButton layoutX="72.0" layoutY="296.0" onAction="#backToLoginOnAction" prefHeight="25.0" prefWidth="238.0" scaleShape="false" style="-fx-background-color: white; -fx-background-radius: 10;" text="LOGIN" textFill="#c29576" underline="true">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

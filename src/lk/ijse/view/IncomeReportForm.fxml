@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="incomeReportForm" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.IncomeReportFormController">
+   <children>
+      <ImageView fitHeight="519.0" fitWidth="797.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/income%20Reports.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="79.0" layoutY="346.0" onAction="#viewMonthlyOnAction" prefHeight="37.0" prefWidth="187.0" style="-fx-background-color: E1BB9F;" text="View Monthly" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="79.0" layoutY="408.0" onAction="#viewAnnuallyOnAction" prefHeight="37.0" prefWidth="187.0" style="-fx-background-color: E1BB9F;" text="View Annually" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="14.0" onAction="#backOnAction" text="Back" textFill="#8a5026" underline="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane fx:id="viewMonthlyPaneContext" layoutX="294.0" layoutY="210.0" prefHeight="308.0" prefWidth="503.0">
+         <children>
+            <TableView layoutX="23.0" layoutY="40.0" prefHeight="207.0" prefWidth="458.0" style="-fx-background-color: white;">
+              <columns>
+                <TableColumn prefWidth="78.0" text="Income Code" />
+                <TableColumn prefWidth="257.0" text="Discription" />
+                  <TableColumn prefWidth="122.0" text="Value" />
+              </columns>
+            </TableView>
+            <Label layoutX="156.0" layoutY="1.0" text="Monthly Income Report">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="265.0" text="Total Income : ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="135.0" layoutY="265.0" text="0.00" textFill="#e1bb9f">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnClose1" buttonType="RAISED" layoutX="391.0" layoutY="256.0" onAction="#closeOnAction" prefHeight="38.0" prefWidth="90.0" style="-fx-background-color: #ffffff;" text="Close" textFill="#984f1a">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="viewAnnuallyPaneContext" layoutX="294.0" layoutY="210.0" opacity="0.87" prefHeight="308.0" prefWidth="503.0" visible="false">
+         <children>
+            <JFXButton fx:id="btnClose" buttonType="RAISED" layoutX="391.0" layoutY="253.0" onAction="#closeOnAction" prefHeight="38.0" prefWidth="90.0" style="-fx-background-color: #ffffff;" text="Close" textFill="#984f1a">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <TableView layoutX="23.0" layoutY="41.0" prefHeight="207.0" prefWidth="458.0" style="-fx-background-color: white;">
+               <columns>
+                  <TableColumn prefWidth="78.0" text="Income Code" />
+                  <TableColumn prefWidth="85.0" text="Month" />
+                  <TableColumn minWidth="0.0" prefWidth="211.0" text="Discription" />
+                  <TableColumn prefWidth="83.0" text="Value" />
+               </columns>
+            </TableView>
+            <Label layoutX="157.0" layoutY="1.0" text="Annually Income Report">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="248.0" prefHeight="48.0" prefWidth="105.0" text="Total Income : ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="137.0" layoutY="262.0" text="0.00" textFill="#e1bb9f">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

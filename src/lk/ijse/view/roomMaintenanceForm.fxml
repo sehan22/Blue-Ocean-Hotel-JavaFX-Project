@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="roomMaintainable" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.RoomMaintenanceFormController">
+   <children>
+      <ImageView fitHeight="519.0" fitWidth="797.0" layoutX="-1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/room%20maintanance.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER_RIGHT" layoutX="390.0" layoutY="283.0" prefHeight="17.0" prefWidth="137.0" text="Roome Code : ">
+         <font>
+            <Font name="DejaVuMathTeXGyre-Regular" size="15.0" />
+         </font>
+         <padding>
+            <Insets bottom="4.0" />
+         </padding>
+      </Label>
+      <JFXPasswordField focusColor="#984f1a" focusTraversable="false" layoutX="523.0" layoutY="267.0" prefHeight="31.0" prefWidth="225.0">
+         <padding>
+            <Insets bottom="4.0" />
+         </padding>
+      </JFXPasswordField>
+      <JFXButton buttonType="RAISED" layoutX="544.0" layoutY="423.0" onAction="#addDetailsOnAction" prefHeight="37.0" prefWidth="162.0" style="-fx-background-color: E1BB9F;" text="Add Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnClose" buttonType="RAISED" layoutX="439.0" layoutY="423.0" onAction="#closeOnAction" prefHeight="38.0" prefWidth="90.0" style="-fx-background-color: #ffffff;" text="Close" textFill="#984f1a">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <Label alignment="CENTER_RIGHT" layoutX="390.0" layoutY="314.0" prefHeight="17.0" prefWidth="137.0" text="Room Type : ">
+         <font>
+            <Font name="DejaVuMathTeXGyre-Regular" size="15.0" />
+         </font>
+         <padding>
+            <Insets bottom="4.0" />
+         </padding>
+      </Label>
+      <JFXPasswordField focusColor="#984f1a" focusTraversable="false" layoutX="523.0" layoutY="298.0" prefHeight="31.0" prefWidth="225.0">
+         <padding>
+            <Insets bottom="4.0" />
+         </padding>
+      </JFXPasswordField>
+      <Label alignment="CENTER_RIGHT" layoutX="390.0" layoutY="345.0" prefHeight="17.0" prefWidth="137.0" text="Discription : ">
+         <font>
+            <Font name="DejaVuMathTeXGyre-Regular" size="15.0" />
+         </font>
+         <padding>
+            <Insets bottom="4.0" />
+         </padding>
+      </Label>
+      <JFXPasswordField focusColor="#984f1a" focusTraversable="false" layoutX="523.0" layoutY="329.0" prefHeight="31.0" prefWidth="225.0">
+         <padding>
+            <Insets bottom="4.0" />
+         </padding>
+      </JFXPasswordField>
+      <Label layoutX="390.0" layoutY="376.0" prefHeight="17.0" prefWidth="266.0" text="Number of days for maintenance : ">
+         <font>
+            <Font name="DejaVuMathTeXGyre-Regular" size="15.0" />
+         </font>
+         <padding>
+            <Insets bottom="4.0" />
+         </padding>
+      </Label>
+      <JFXPasswordField focusColor="#984f1a" focusTraversable="false" layoutX="650.0" layoutY="360.0" prefHeight="31.0" prefWidth="98.0">
+         <padding>
+            <Insets bottom="4.0" />
+         </padding>
+      </JFXPasswordField>
+      <JFXButton buttonType="RAISED" layoutX="23.0" layoutY="28.0" onAction="#goBackOnAction" text="Back" textFill="#8a5026" underline="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>
